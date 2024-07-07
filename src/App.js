@@ -1,16 +1,18 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 
-<color name="lightapple">#E8D7D7</color>
+//<text1 id="1" x="100" y="200" font-family="Yeseva One" font-size="54" fill="white">Fridge to Fork.</text1>
+
+<color name="lightapple">#E8D7D7</color> //for keeping track of colors??
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
         <p>
-        <h1>Welcome to Fridge to Fork</h1>
         <MyRecipesButton />
+        <text1>Fridge to Fork.</text1>
+
         </p>
         <a
           className="App-link"
@@ -31,3 +33,5 @@ function MyRecipesButton() {
 }
 
 export default App;
+
+
