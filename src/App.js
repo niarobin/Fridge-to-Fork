@@ -11,8 +11,7 @@ function App() {
       <header className="App-header">
         <p>
         <MyRecipesButton />
-        <text1>Fridge to Fork.</text1>
-
+        <p className="custom-font custom font-size title" >Fridge to Fork.</p>
         </p>
         <a
           className="App-link"
