@@ -1,25 +1,22 @@
 //import logo from './logo.svg';
 import './App.css';
+import veggiesImage from '/Users/aileenniu/Fridge-to-Fork/src/images/veggies.png';
 
 //<text1 id="1" x="100" y="200" font-family="Yeseva One" font-size="54" fill="white">Fridge to Fork.</text1>
 
-<color name="lightapple">#E8D7D7</color> //for keeping track of colors??
+<color name="lightapple">#E8D7D7</color> //apple: #DF6262
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
+        <div className="main-content">
+        <img src={veggiesImage} alt="backgroundimage" className="backgroundimage" />
         <p>
+        <p className="custom-font custom font-size title" style={{ color: '#DF6262' }}>Fridge to Fork.</p>
         <MyRecipesButton />
-        <p className="custom-font custom font-size title" >Fridge to Fork.</p>
         </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-        </a>
+        </div>
       </header>
     </div>
   );

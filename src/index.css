@@ -21,3 +21,9 @@ code {
 .custom-font-size title {
   font-size: 100px; /* Change this value to whatever size you need */
 }
+
+.backgroundimage {
+  width: 1000px; /* Adjust width as needed */
+  height: auto; /* Maintain aspect ratio */
+  margin-right: 10px; /* Optional margin for spacing */
+}
