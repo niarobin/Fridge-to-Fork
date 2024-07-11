@@ -3,10 +3,12 @@ import './App.css';
 import veggiesImage from './images/veggies.png';
 
 // import pages and buttons
+import NavBar from "./components/NavBar/index.js";
 import { 
   BrowserRouter as Router, Routes, 
   Route 
 } from "react-router-dom"; 
+import Home from "./pages/Home";
 import MyRecipes from "./pages/MyRecipes"; 
 import MyRecipesButton from "./components/MyRecipesButton"; 
 
@@ -22,28 +24,32 @@ function App() {
         <img src={veggiesImage} alt="backgroundimage" className="backgroundimage" />
         <p>
         <p className="custom-font custom font-size title" style={{ color: '#DF6262' }}>Fridge to Fork.</p>
-        <MyRecipesButton />
+        {/* <MyRecipesButton /> */}
         </p>
         </div>
       </header>
 
       {/* route buttons */}
-      <Router> 
-        <MyRecipesButton to="my-recipes" /> 
-        <Routes> 
-            <Route path="/my-recipes"
-                element={<MyRecipes />} /> 
+      <Router>
+        <NavBar />
+        {/* <MyRecipesButton to="my-recipes" />  */}
+        <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route
+              path="/my-recipes"
+              element={<MyRecipes />}
+            /> 
         </Routes> 
       </Router> 
     </div>
   );
 }
 
-function My_RecipesButton() {
-  return (
-    <button>My Recipes</button>
-  );
-}
+// function My_RecipesButton() {
+//   return (
+//     <button>My Recipes</button>
+//   );
+// }
 
 export default App;
 
