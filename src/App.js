@@ -1,6 +1,6 @@
 //import logo from './logo.svg';
 import './App.css';
-import veggiesImage from '/Users/aileenniu/Fridge-to-Fork/src/images/veggies.png';
+import veggiesImage from './images/veggies.png';
 
 // import pages and buttons
 import { 
