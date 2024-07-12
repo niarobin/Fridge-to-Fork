@@ -6,3 +6,12 @@ export async function fetchRecipes() {
     const recipes = await response.json(); // Convert JSON content to JavaScript Object
     return recipes;
 }
+
+// Want to print the recipes I fetched but I'm getting an error
+fetchRecipes().then(recipes => {
+    const firstThreeRecipes = recipes.slice(0, 3);
+    console.log(firstThreeRecipes);
+    // Use firstThreeRecipes as needed in your application
+}).catch(error => {
+    console.error('Error fetching or processing recipes:', error);
+});
