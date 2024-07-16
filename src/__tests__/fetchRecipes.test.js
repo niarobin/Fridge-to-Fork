@@ -1,6 +1,6 @@
 // src/__tests__/fetchRecipes.test.js
 
-import { fetchRecipes } from '../utils/fetchRecipes';
+import { fetchRecipes } from '../utils/fetchFilteredRecipes';
 import fetchMock from 'jest-fetch-mock';
 
 // Enable fetch mocking
