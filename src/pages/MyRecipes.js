@@ -1,7 +1,7 @@
-import curry from '/Users/hyunjinlee/Fridge-to-Fork/src/images/curry.jpeg';
+import curry from '../images/curry.jpeg';
 
 const MyRecipes = () => { 
-    return( 
+    return(
         <div className="my-recipes"> 
             <h1>My Recipes</h1>
             <div className="main-content">
