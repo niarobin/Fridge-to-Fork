@@ -45,12 +45,12 @@ function getTitlesSorted(titles, category, ascending = true) {
 // Attempt to find the recipe in data based on the title
 // This will be used when the user clicks a recipe
 
-// var food = ['fennel', 'onion', 'butter', 'potato', 'chicken broth', 'milk']; // this will be determined by the user
-// var filteredTitles = filterByIngredients(food, data);
+var food = ['fennel', 'onion', 'butter', 'potato', 'chicken broth', 'milk']; // this will be determined by the user
+var filteredTitles = filterByIngredients(food, data);
 
 
-// let category = 'title';
-// let ascending = true;
-// var sortedTitles = getTitlesSorted(filteredTitles, category, ascending);
+let category = 'title';
+let ascending = true;
+//var sortedTitles = getTitlesSorted(filteredTitles, category, ascending);
 
-// console.log(sortedTitles);
+console.log(getTitlesSorted(filteredTitles, category, ascending));
