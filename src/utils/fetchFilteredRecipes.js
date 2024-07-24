@@ -1,4 +1,5 @@
 
+const readline = require('readline');
 var data = require('../data/full_format_recipes.json') // data is an object of objects
 
 // remove recipes that do not have ingredients or 
@@ -45,12 +46,34 @@ function getTitlesSorted(titles, category, ascending = true) {
 // Attempt to find the recipe in data based on the title
 // This will be used when the user clicks a recipe
 
-var food = ['fennel', 'onion', 'butter', 'potato', 'chicken broth', 'milk']; // this will be determined by the user
-var filteredTitles = filterByIngredients(food, data);
+// var food = ['fennel', 'onion', 'butter', 'potato', 'chicken broth', 'milk']; // this will be determined by the user
+// const userIngredients = prompt("Please enter your ingredients separated by a comma:").split(", ");
+// // var filteredTitles = filterByIngredients(food, data);
+// var filteredTitles = filterByIngredients(userIngredients, data);
 
 
-let category = 'title';
-let ascending = true;
-//var sortedTitles = getTitlesSorted(filteredTitles, category, ascending);
+// let category = 'title';
+// let ascending = true;
+// //var sortedTitles = getTitlesSorted(filteredTitles, category, ascending);
 
-console.log(getTitlesSorted(filteredTitles, category, ascending));
+// console.log(getTitlesSorted(filteredTitles, category, ascending));
+
+// Create an interface for reading user input
+const rl = readline.createInterface({
+  input: process.stdin,
+  output: process.stdout
+});
+
+// Ask the user for ingredients
+rl.question("Please enter your ingredients separated by a comma: ", (input) => {
+  const userIngredients = input.split(", ").map(item => item.trim());
+  var filteredTitles = filterByIngredients(userIngredients, data);
+
+  let category = 'calories';
+  let ascending = true;
+
+  console.log(getTitlesSorted(filteredTitles, category, ascending));
+
+  // Close the readline interface
+  rl.close();
+});

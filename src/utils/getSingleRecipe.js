@@ -13,4 +13,4 @@ function allDetails(name) { // Attempt to find the recipe in data based on the t
     return recipe;
 }
 
-console.log(allDetails('To Clarify Butter '))
+// console.log(allDetails('Fully Salted Roast Chicken '))
