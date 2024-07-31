@@ -1,0 +1,17 @@
+.recipe-details {
+    padding: 20px;
+}
+
+.recipe-details h1 {
+    margin-bottom: 20px;
+}
+
+.recipe-details ul {
+    list-style-type: disc;
+    padding-left: 20px;
+}
+
+.recipe-details ol {
+    list-style-type: decimal;
+    padding-left: 20px;
+}
