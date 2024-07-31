@@ -11,8 +11,8 @@ import {
 import Home from "./pages/Home";
 import MyRecipes from "./pages/MyRecipes"; 
 import MyRecipesButton from "./components/MyRecipesButton";
-// import full_format_recipes from "./full_format_recipes.json";
-// import allDetails from "./getSingleRecipe.js"
+import recipes from "./data/full_format_recipes";
+import allDetails from "./utils/getSingleRecipe.js"
 
 //<text1 id="1" x="100" y="200" font-family="Yeseva One" font-size="54" fill="white">Fridge to Fork.</text1>
 
@@ -41,7 +41,14 @@ function App() {
               path="/my-recipes"
               element={<MyRecipes />}
             /> 
-        </Routes> 
+        </Routes>
+
+        {/* display directions */}
+        {/* <Switch>
+            <Route exact path='/' exact component={Portfolio} />
+            <Route exact path='/:id' exact component={Project} />             
+            <Route component={ErrorPage} />
+        </Switch> */}
       </Router> 
     </div>
   );

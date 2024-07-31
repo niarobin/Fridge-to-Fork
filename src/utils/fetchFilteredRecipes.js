@@ -1,6 +1,6 @@
 
 const readline = require('readline');
-var data = require('../data/full_format_recipes.json') // data is an object of objects
+var data = require('../data/full_format_recipes') // data is an object of objects
 
 // remove recipes that do not have ingredients or 
 data = data.filter(recipe => recipe.ingredients && recipe.ingredients.length > 0
