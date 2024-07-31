@@ -50,15 +50,33 @@ function App() {
             <Route component={ErrorPage} />
         </Switch> */}
       </Router> 
+
+      {/* <p>Name: {recipes.object.title}/n</p> */}
+
     </div>
   );
 }
 
-// function My_RecipesButton() {
-//   return (
-//     <button>My Recipes</button>
-//   );
-// }
+for(var i in recipes){
+  if (recipes[i].title != null && recipes[i].directions != null) {
+    var key=recipes[i].title;
+    var directions = recipes[i].directions;
+    var ingredients = recipes[i].ingredients;
+  }
+  var a=document.createElement('a');
+  a.href="Ingredients: " + ingredients + "\nDirections: " + directions;
+  a.innerHTML=key;
+  document.querySelector('body').appendChild(a);
+}
+var hyperlinks=document.getElementsByTagName('a');
+for(i=0;i<hyperlinks.length;i++){
+  hyperlinks[i].onclick=function(e){
+    e.preventDefault();
+    var href=this.getAttribute('href');
+    alert(href);
+  }
+}
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
 
 export default App;
 
