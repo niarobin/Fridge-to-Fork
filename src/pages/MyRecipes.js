@@ -1,4 +1,8 @@
-import curry from '../images/curry.jpeg';
+import React from 'react';
+// import reportWebVitals from './reportWebVitals.js';
+// import ReactDOM from 'react-dom';
+import curry from '../images/curry_1_75.jpeg';
+import recipes from '../utils/fetchFilteredRecipes';
 
 const MyRecipes = () => { 
     return(
@@ -15,31 +19,3 @@ const MyRecipes = () => {
 } 
   
 export default MyRecipes;
-
-
-
-
-// <div className="App">
-//       <header className="App-header">
-//         <div className="main-content">
-//         <img src={veggiesImage} alt="backgroundimage" className="backgroundimage" />
-//         <p>
-//         <p className="custom-font custom font-size title" style={{ color: '#DF6262' }}>Fridge to Fork.</p>
-//         {/* <MyRecipesButton /> */}
-//         </p>
-//         </div>
-//       </header>
-
-//       {/* route buttons */}
-//       <Router>
-//         <NavBar />
-//         {/* <MyRecipesButton to="my-recipes" />  */}
-//         <Routes>
-//             <Route exact path="/" element={<Home />} />
-//             <Route
-//               path="/my-recipes"
-//               element={<MyRecipes />}
-//             /> 
-//         </Routes> 
-//       </Router> 
-//     </div>

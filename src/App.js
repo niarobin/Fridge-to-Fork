@@ -10,7 +10,9 @@ import {
 } from "react-router-dom"; 
 import Home from "./pages/Home";
 import MyRecipes from "./pages/MyRecipes"; 
-import MyRecipesButton from "./components/MyRecipesButton"; 
+import MyRecipesButton from "./components/MyRecipesButton";
+// import full_format_recipes from "./full_format_recipes.json";
+// import allDetails from "./getSingleRecipe.js"
 
 //<text1 id="1" x="100" y="200" font-family="Yeseva One" font-size="54" fill="white">Fridge to Fork.</text1>
 
