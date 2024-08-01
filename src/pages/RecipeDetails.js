@@ -25,9 +25,15 @@ const RecipeDetails = () => {
           <li key={index}>{step}</li>
         ))}
       </ol>
+      <h3>Nutritional Information:</h3>
+      <ul>
+        <li>Calories: {recipe.calories}</li>
+        <li>Fat: {recipe.fat}g</li>
+        <li>Protein: {recipe.protein}g</li>
+        <li>Sodium: {recipe.sodium}mg</li>
+      </ul>
     </div>
   );
 };
 
 export default RecipeDetails;
-
