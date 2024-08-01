@@ -1,0 +1,43 @@
+/* components/NavBar/NavBar.css */
+
+.NavBar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: rgb(255, 255, 255); /* Semi-transparent background */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional: Add shadow for better visibility */
+    z-index: 1000; /* Ensure it's on top of other content */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-title {
+    font-size: 2rem; /* Adjust as needed */
+    color: #DF6262; /* Or any other color you prefer */
+    margin: 0;
+  }
+  
+  nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+  nav ul li {
+    margin: 0 10px;
+  }
+  
+  nav ul li a {
+    text-decoration: none;
+    color: #333; /* Adjust link color as needed */
+    font-size: 1rem; /* Adjust as needed */
+  }
+  
+  nav ul li a:hover {
+    text-decoration: underline; /* Optional: Add hover effect */
+  }
+  

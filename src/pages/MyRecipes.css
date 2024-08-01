@@ -1,24 +1,40 @@
+/* src/pages/MyRecipes.css */
+
 .my-recipes {
+    margin-top: 80px; /* Adjust this if necessary */
     padding: 20px;
-}
-
-.main-content {
+    text-align: center; /* Center-align content for a neat look */
+    background-color: #ffffff;
+  }
+  
+  .my-recipes-header {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 20px; /* Space between header and input */
+  }
+  
+  .featured-image {
+    max-width: 100%; /* Ensures the image scales within its container */
+    height: auto;
+    margin-bottom: 20px; /* Space below the image */
+  }
+  
+  .search-bar {
+    width: 80%;
+    padding: 10px;
+    margin: 20px 0; /* Space around the search bar */
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  .recipes-list {
     margin-top: 20px;
-}
-
-.recipes-list {
-    margin-top: 20px;
-}
-
-.recipe-link {
-    display: block; /* Ensure each link is on a new line */
-    margin-bottom: 10px; /* Space between each link */
-    text-decoration: none;
-    color: #007bff; /* Link color */
-    font-size: 1.2em; /* Font size for the links */
-}
-
-.recipe-link:hover {
-    text-decoration: underline;
-    color: #0056b3; /* Hover color */
-}
+  }
+  
+  .recipe {
+    margin-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+  }
+  

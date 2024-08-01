@@ -1,0 +1,22 @@
+/* src/pages/Home.css */
+
+.home-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    text-align: center;
+    background-image: url('../images/veggies.png'); /* Path to your image */
+    background-size: cover; /* Ensures the image covers the whole area */
+    background-position: center; /* Centers the image */
+    background-repeat: no-repeat; /* Prevents the image from repeating */
+  }
+  
+  .welcome-message {
+    font-size: 6rem; /* Adjust size as needed */
+    color: #333; /* Adjust color as needed */
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.8); /* Optional: background for better readability */
+    border-radius: 10px; /* Optional: round the corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Optional: add shadow for depth */
+  }
